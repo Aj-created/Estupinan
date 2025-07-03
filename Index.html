@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <a href="shop.html">Shop</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estupiñan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="menu-icon" onclick="toggleNav()">⋮</div>
+  <header>
+    <img src="logo.png" alt="Estupiñan Logo" class="logo">
+    <div class="cart-icon" onclick="window.location.href='shop.html'">🛒</div>
+  </header>
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="about">
+      <h1>Welcome to Estupiñan</h1>
+      <p>Born from a passion for culture, heritage, and luxury fashion — Estupiñan brings together ancient elegance with contemporary style...</p>
+    </section>
+  </main>
+  <footer>
+    <section id="support">
+      <h3>Need Help?</h3>
+      <p>Email: support@estupinan.com</p>
+      <p>Instagram: <a href="https://instagram.com/estupinan" target="_blank">@estupinan</a></p>
+    </section>
+  </footer>
+  <script>
+    function toggleNav() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
